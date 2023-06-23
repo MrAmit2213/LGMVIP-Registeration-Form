@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000" />
+    <title>Registeration Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Student Enrollment Form</h1>
+    </header>
+    <div class = "container-fluid flex one">
+      <div class = "side">
+        <div class="form">
+            <div class='flex'>
+                <div class='details'>
+                    <p>Name</p>
+                    <p>Email</p>
+                    <p>Website</p>
+                    <p>Image Link</p>
+                    <p>Gender</p>
+                    <p>Skills</p>
+                </div>
+                <div class='inputs'>
+                    <input value="" id="name" required type="text" />
+                    <input id="email" required type="email" />
+                    <input id="website" required type="text" />
+                    <input id="img" required type="text" />
+                    <div class='block size'>
+                        <label class='block'>
+                            <input required value="Male" name='gender' type="radio" />Male
+                        </label>
+                        <label>
+                            <input required value="Female" name='gender' type="radio" />Female
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input name="skill" id="java" value="Java " type="checkbox" />Java
+                        </label>
+                        <label>
+                            <input name="skill" id="html" value="Html " type="checkbox" />Html
+                        </label>
+                        <label>
+                            <input name="skill" id="css" value="CSS " type="checkbox" />CSS
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid">
+                <button onclick="display()" class='mx-5 my-2 col-auto btn btn-success' >Enroll Student</button>
+                <button class="btn btn-danger" onclick="clear()">Clear</button>
+            </div>
+          <!-- <div class='my-4'>
+            <button onclick="display()" class='mx-4 col-auto btn btn-primary' >Enroll Student</button>
+            <button onclick="clear()" class='col-auto btn btn-danger'>Clear</button>
+          </div> -->
+        </div>
+        </div>
+        <div class ="content">
+        <div id="cards" class="center container flex ">
+            <h4>Enrolled Students</h4>
+            <div class='flex des'>
+               <h5 class="flex discription">Discription</h5>
+               <h5 class='image'>Image</h5>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
+</body>
+</html>
